@@ -13,13 +13,15 @@ class Gala:
     async def iq(self, ctx, member: discord.Member = None):
         if member is None:
             return await ctx.send('A targeted user is required')
-        iq = random.randrange(1, 1000)
+        iq = random.randint(1, 201)
         # like if its 1-300 would be green, 300-600 would be orange, 600-900 would be red and 900-1000 purple? if not just make it always red :p
-        if iq <= 300:
+        if iq <= 19:
             color = discord.Color.green()
-        elif iq <= 600:
+        elif iq <= 59:
+            color = discord.Color(0xf1c40f)
+        elif iq <= 119:
             color = discord.Color.orange()
-        elif iq <= 900:
+        elif iq <= 200:
             color = discord.Color.red()
         else:
             color = discord.Color.purple()
