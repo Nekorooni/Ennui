@@ -8,7 +8,7 @@ import aiohttp
 
 import config
 
-desc = 'A bot for rubs'
+desc = 'A bot'
 
 class Rub(commands.Bot):
 
