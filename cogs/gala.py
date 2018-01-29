@@ -10,6 +10,7 @@ class Gala:
         self.bot = bot
 
     @commands.command()
+    @commands.has_any_role('IQ')
     async def iq(self, ctx, member: discord.Member = None):
         if member is None:
             return await ctx.send('A targeted user is required')
