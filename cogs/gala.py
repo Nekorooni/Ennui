@@ -1,13 +1,7 @@
-import asyncio
-import datetime
 import random
 
-import aiohttp
 import discord
 from discord.ext import commands
-from io import BytesIO
-
-from PIL import Image, ImageFilter, ImageSequence
 
 class Gala:
     """Help yourself"""
