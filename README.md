@@ -1,0 +1,2 @@
+# Ennui
+Gala's bot
