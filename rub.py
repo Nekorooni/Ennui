@@ -54,11 +54,6 @@ class Rub(commands.Bot):
     def run(self):
         super().run(config.token)
 
-    @commands.command()
-    async def source(self, ctx):
-        """A link to Rub's source code"""
-        await ctx.send('https://github.com/Nekorooni/Rub')
-
 
 if __name__ == '__main__':
     rub = Rub()
