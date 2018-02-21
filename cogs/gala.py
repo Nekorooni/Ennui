@@ -30,6 +30,10 @@ class Gala:
         embed = discord.Embed(color=color, description=f'{member.mention}\n\n"{lastmsg.clean_content}"\n\n{iq} IQ')
         embed.set_author(name='❗ IQ Analyzer ❗', icon_url=member.avatar_url_as(size=32))
         embed.set_footer(text=f'🔮 {lastmsg.created_at.strftime("%d/%m/%Y")}, #{ctx.channel.name} 🔮')
+
+        if lastmsg.attachments:
+            embed.set_image(url=lastmsg.attachments[0].url)
+
         await ctx.send(embed=embed)
 
 def setup(bot):
